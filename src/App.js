@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.sass';
+import './App.scss';
 
 import headerLogo from './_assets/logo.svg';
 import submitIcon from './_assets/icon-arrow.svg';

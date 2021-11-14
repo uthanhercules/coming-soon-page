@@ -16,3 +16,15 @@ body {
   background-image: $lightGradient;
   background-size: cover;
 }
+
+@media (min-width: 1270px) {
+  .mobileImage {
+    display: none;
+  }
+}
+
+@media (max-width: 1269px) {
+  .desktopImage {
+    display: none;
+  }
+}

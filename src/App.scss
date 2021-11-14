@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  padding: 3rem 8rem;
+  max-width: 100vw;
   background-image: $lightGradient;
   background-size: cover;
 }
@@ -21,10 +21,119 @@ body {
   .mobileImage {
     display: none;
   }
+
+  .content {
+    padding: 3rem 15rem 0 10rem;
+  }
+
+  body {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  button {
+    position: relative;
+    right: 2.5rem;
+  }
 }
 
 @media (max-width: 1269px) {
   .desktopImage {
     display: none;
+  }
+
+  .mobileImage {
+    margin-bottom: 4rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  header {
+    padding-left: 3rem;
+  }
+
+  .content {
+    display: flex;
+    padding: 3rem 0 0 0;
+
+    p {
+      padding: 0 10%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      text-align: center
+    }
+  }
+
+  .input {
+    margin: 0 auto;
+    align-self: center;
+    width: 80%;
+
+    button {
+      position: absolute;
+      right: 2.2rem;
+    }
+  }
+}
+
+main {
+  display: flex;
+
+  header {
+    margin-bottom: 5rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: $DarkGrayishRed;
+
+    span {
+      color: $desaturatedRed;
+      font-weight: 300;
+    }
+  }
+
+  p {
+    margin: 2rem 0;
+    color: $desaturatedRed;
+  }
+
+  .desktopImage {
+    img {
+      height: 100vh;
+    }
+  }
+  
+  .input {
+    display: flex;
+    
+    input {
+      width: 110%;
+      height: 3rem;
+      padding-left: 1rem;
+      border-radius: 25px;
+      outline: none;
+      border: solid lightgrey 1px;
+    }
+
+    button {
+      width: 6rem;
+      height: 3rem;
+      border-radius: 25px;
+      border: none;
+      background-image: $redGradient;
+    }
   }
 }
